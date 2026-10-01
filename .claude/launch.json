@@ -1,0 +1,1 @@
+{ "version": "0.0.1", "configurations": [ { "name": "shoe", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/ASUS/Work/Demo/shoe_website"], "port": 3000 } ] }
