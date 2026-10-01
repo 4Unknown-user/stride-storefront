@@ -29,7 +29,7 @@ export default function SiteMenu({ open, onClose, pathname }: { open: boolean; o
   if (typeof document === "undefined") return null;
 
   return createPortal(
-    <div ref={root} className={`fixed inset-0 z-[90] md:hidden ${open ? "" : "pointer-events-none"}`} aria-hidden={!open}>
+    <div ref={root} className={`fixed inset-0 z-[90] lg:hidden ${open ? "" : "pointer-events-none"}`} aria-hidden={!open}>
       <div
         role="dialog"
         aria-modal="true"

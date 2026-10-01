@@ -47,12 +47,12 @@ export default function Navbar() {
     <header className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${scrolled ? SCROLLED : TOP}`}>
       <div className="flex items-center justify-between gap-2 px-3 py-3 sm:px-6 md:px-12 md:py-4">
         <div className="flex items-center gap-1">
-          <button onClick={() => setMenuOpen(true)} aria-label="Open menu" aria-haspopup="dialog" className={`${ICON_BTN} md:hidden`}>
+          <button onClick={() => setMenuOpen(true)} aria-label="Open menu" aria-haspopup="dialog" className={`${ICON_BTN} lg:hidden`}>
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
               <path d="M4 8h16M4 16h16" strokeLinecap="round" />
             </svg>
           </button>
-          <Link href="/" aria-label="Stride home" className="shrink-0 md:-ml-2.5">
+          <Link href="/" aria-label="Stride home" className="shrink-0 lg:-ml-2.5">
             <Image
               src="/logo.png"
               alt="Stride"
@@ -64,7 +64,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <nav aria-label="Main" className="hidden md:block">
+        <nav aria-label="Main" className="hidden lg:block">
           <ul className="flex gap-1 text-xs font-medium uppercase tracking-[0.15em]">
             {LINKS.map(({ label, href }) => (
               <li key={label}>
