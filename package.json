@@ -9,7 +9,7 @@
     "check": "node --no-warnings lib/checkout.check.mjs"
   },
   "engines": {
-    "node": ">=20"
+    "node": "24.x"
   },
   "dependencies": {
     "gsap": "^3.15.0",
